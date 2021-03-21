@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 class Posts extends Component {
-    componentWillMount(){
-        console.log(123);
-    }
 
+    async componentWillMount(){
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const json = await response.json();
+        console.log(json);
+     }
 
     render() {
         return (
