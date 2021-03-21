@@ -2,12 +2,7 @@ import './App.css';
 import Posts from './components/Posts';
 import PostForm from './components/PostForm';
 import { Provider } from 'react-redux'
-import { applyMiddleware, createStore } from 'redux';
 import store from './store'
-
-
-
-const store = createStore(() => [], {}, applyMiddleware());
 
 
 function App() {
