@@ -22,15 +22,7 @@ class PostForm extends Component {
             body: this.state.body
         }
 
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts',{
-            method:'POST',
-            headers:{
-                'Content-Type':'application/json'
-            },
-            body: JSON.stringify(post)
-        });
-        const json = await response.json();
-        console.log(json);
+        // Call Action
         
     }
 
